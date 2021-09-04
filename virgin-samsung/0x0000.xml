@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PAT version="30" current="true" transport_stream_id="0x0001" network_PID="0x0010">
+    <metadata PID="0"/>
+    <service service_id="0x1000" program_map_PID="0x03E8"/>
+    <service service_id="0x2000" program_map_PID="0x07D0"/>
+    <service service_id="0x3000" program_map_PID="0x0BB8"/>
+  </PAT>
+</tsduck>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <SDT version="9" current="true" transport_stream_id="0x0001" original_network_id="0x0001" actual="true">
+    <metadata PID="17"/>
+    <service service_id="0x1000" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="running">
+      <generic_descriptor tag="0xCA">
+        00 69 0A 42 42 43 20 43 68 6F 69 63 65 02 10 00 20 00 00
+      </generic_descriptor>
+      <service_descriptor service_type="0x01" service_provider_name="" service_name="Battersea 1"/>
+      <cue_identifier_descriptor cue_stream_type="64"/>
+      <generic_descriptor tag="0x9D">
+        03 07 01 10
+      </generic_descriptor>
+      <generic_descriptor tag="0xA3">
+        01 5B 01 82 00 02 18 41 01 00 00 00 FF
+      </generic_descriptor>
+      <generic_descriptor tag="0xA3">
+        01 78 1A 0A 00 02 18 50 80
+      </generic_descriptor>
+    </service>
+    <service service_id="0x2000" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="running">
+      <generic_descriptor tag="0xCA">
+        00 73 0A 42 42 43 20 43 68 6F 69 63 65 02 10 00 20 00 00
+      </generic_descriptor>
+      <service_descriptor service_type="0x01" service_provider_name="" service_name="Battersea 2"/>
+      <cue_identifier_descriptor cue_stream_type="64"/>
+      <generic_descriptor tag="0x9D">
+        03 07 01 10
+      </generic_descriptor>
+      <generic_descriptor tag="0xA3">
+        01 5B 01 82 00 02 18 41 01 00 00 00 FF
+      </generic_descriptor>
+      <generic_descriptor tag="0xA3">
+        01 78 1A 0A 00 02 18 50 80
+      </generic_descriptor>
+    </service>
+    <service service_id="0x3000" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="running">
+      <generic_descriptor tag="0xCA">
+        00 7D 0A 42 42 43 20 43 68 6F 69 63 65 02 10 00 20 00 00
+      </generic_descriptor>
+      <service_descriptor service_type="0x02" service_provider_name="" service_name="Battersea FM"/>
+      <cue_identifier_descriptor cue_stream_type="64"/>
+      <generic_descriptor tag="0x9D">
+        03 07 01 10
+      </generic_descriptor>
+      <generic_descriptor tag="0xA3">
+        01 5B 01 82 00 02 18 41 01 00 00 00 FF
+      </generic_descriptor>
+      <generic_descriptor tag="0xA3">
+        01 78 1A 0A 00 02 18 50 80
+      </generic_descriptor>
+    </service>
+  </SDT>
+</tsduck>

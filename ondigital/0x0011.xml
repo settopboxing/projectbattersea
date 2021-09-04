@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <SDT version="5" current="true" transport_stream_id="0x0001" original_network_id="0x0001" actual="true">
+    <metadata PID="17"/>
+    <service service_id="0x1000" EIT_schedule="true" EIT_present_following="true" CA_mode="false" running_status="running">
+      <service_descriptor service_type="0x01" service_provider_name="AEAE" service_name="AE/AE 1"/>
+    </service>
+    <service service_id="0x2000" EIT_schedule="true" EIT_present_following="true" CA_mode="false" running_status="running">
+      <service_descriptor service_type="0x01" service_provider_name="AEAE" service_name="AE/AE 2"/>
+    </service>
+    <service service_id="0x3000" EIT_schedule="true" EIT_present_following="true" CA_mode="false" running_status="running">
+      <service_descriptor service_type="0x02" service_provider_name="AEAE" service_name="AE/AE FM"/>
+    </service>
+  </SDT>
+</tsduck>

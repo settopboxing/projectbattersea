@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT version="6" current="true" network_id="3116" actual="true">
+    <metadata PID="16"/>
+    <network_name_descriptor network_name="ntl"/>
+    <transport_stream transport_stream_id="0x0001" original_network_id="0x0001" preferred_section="1">
+      <logical_channel_number_descriptor>
+        <service service_id="0x1001" logical_channel_number="101" visible_service="true"/>
+      </logical_channel_number_descriptor>
+      <service_list_descriptor>
+        <service service_id="0x1001" service_type="0x01"/>
+      </service_list_descriptor>
+      <generic_descriptor tag="0x83">
+        00 C9 FC 65 00 CA FC 66 00 CB FC 67 00 CC FC 68
+        00 CD FC 69
+      </generic_descriptor>
+    </transport_stream>
+  </NIT>
+</tsduck>

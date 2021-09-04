@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT version="3" current="true" network_id="41050" actual="true">
+    <metadata PID="16"/>
+    <network_name_descriptor network_name="Manchester 1"/>
+    <generic_descriptor tag="0xC7">
+      80 00
+    </generic_descriptor>
+    <generic_descriptor tag="0xD0">
+      19 01 05 B1 00 67
+    </generic_descriptor>
+    <generic_descriptor tag="0x83">
+      05 06 75 00 05 06 75 00 05 00 69 52 09 7F
+    </generic_descriptor>
+    <transport_stream transport_stream_id="0x0001" original_network_id="0x0001" preferred_section="0">
+      <cable_delivery_system_descriptor frequency="666,750,000" FEC_outer="RS" modulation="64-QAM" symbol_rate="6,952,000" FEC_inner="3/4"/>
+      <service_list_descriptor>
+        <service service_id="0x1000" service_type="0x01"/>
+        <service service_id="0x2000" service_type="0x01"/>
+        <service service_id="0x3000" service_type="0x02"/>
+      </service_list_descriptor>
+    </transport_stream>
+  </NIT>
+</tsduck>

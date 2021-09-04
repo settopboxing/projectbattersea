@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT version="4" current="true" network_id="0x0001" actual="true">
+    <metadata PID="16"/>
+    <network_name_descriptor network_name="battersea"/>
+    <transport_stream transport_stream_id="0x0001" original_network_id="0x0001" preferred_section="0">
+      <logical_channel_number_descriptor>
+        <service service_id="0x1000" logical_channel_number="5" visible_service="true"/>
+        <service service_id="0x2000" logical_channel_number="10" visible_service="true"/>
+        <service service_id="0x3000" logical_channel_number="25" visible_service="true"/>
+      </logical_channel_number_descriptor>
+      <service_list_descriptor>
+        <service service_id="0x1000" service_type="0x01"/>
+        <service service_id="0x2000" service_type="0x01"/>
+        <service service_id="0x3000" service_type="0x02"/>
+      </service_list_descriptor>
+    </transport_stream>
+  </NIT>
+</tsduck>
