@@ -1,10 +1,5 @@
 #!/bin/bash
 
-BITRATEV=2600000
-BITRATEA=128000
-BITRATEVTS=3000000
-BITRATEATS=188000
-BUFFERSZ=1835008
 BITRATE=0
 XMLPATH=NONE
 NID=0
@@ -45,12 +40,6 @@ select platform in "${PLATFORMS[@]}"; do
 	esac
 done
 
-PCR_PER_SEC=5
-PCR_DISTANCE=$(( $BITRATE / $(( $PCR_PER_SEC * 188 * 8 )) ))
-PCR_PID=5004
-
-echo "PCR distance is $PCR_DISTANCE"
-
 MUXCONTENTS=""
 
 mkfifo ./videolive/livetrans.ts
@@ -86,7 +75,7 @@ tsp --verbose --bitrate $BITRATE --buffer-size-mb 128 \
 -P filter --negate -p 3000 -s \
 ${MUXCONTENTS} \
 -P inject --poll-files --eit-normalization ./common/eit.xml --pid 0x0012 --bitrate 15000 -s -f \
--P inject ./common/tot.xml --pid 0x0014 --bitrate 1500 -s -f \
+-P inject ./common/tot.xml ./common/tdt.xml --pid 0x0014 --bitrate 1500 -s -f \
 -P nit --network-id $NID \
 -P timeref --start system --local-time-offset 60 $ADDPARAMS \
 -O file ./videolive/livetrans.ts &
