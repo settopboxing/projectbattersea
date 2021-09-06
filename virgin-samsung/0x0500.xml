@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT version="5" current="true" service_id="0x0500" PCR_PID="0x03E9">
+    <component elementary_PID="0x03E9" stream_type="0x02"/>
+    <component elementary_PID="0x03EA" stream_type="0x03"/>
+  </PMT>
+</tsduck>
